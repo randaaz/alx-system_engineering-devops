@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name "*.gif" | rev | cut -d'/' -f 1 | rev | cut -d '.' -f 1 | LC_COLLATE=C sort -f
+IFS=$'\n' read -d '' -ra lines < "$1"; decoded=""; for line in "${lines[@]}"; do decoded+="${line:0:1}"; done; echo -e "$decoded"
