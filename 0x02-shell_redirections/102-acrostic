@@ -1,0 +1,2 @@
+#!/bin/bash
+decoded=$(awk '{printf "%s", substr($0,1,1)} END {print ""}' "$1") echo -e "$decoded"
