@@ -1,2 +1,2 @@
 #!/bin/bash
-find -type f -name"*.gif" |rev |cut -d '/' -f 1 |cut-d'.'-f2- |rev sort -f
+decoded=$(awk '{printf "%s", substr($0,1,1)} END {print ""}' "$1") echo -e "$decoded"
