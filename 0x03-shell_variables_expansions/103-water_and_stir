@@ -1,0 +1,2 @@
+#!/bin/bash
+printf "%0\n" $(( $((5#$(echo $WATER | tr water 23456))) + $((5#$(echo $STIR | tr stir. 23456)) )) | tr 23456abcdef bestchol
