@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script is displaying Bash script that displays numbers from 1 to 20 
+
+hours=0
+
+while [ $hours -le 12 ]
+do
+    echo "$hours:hours"
+    
+    minutes=1
+    while [ $minutes -le 59 ]
+    do
+        echo "$minutes"
+        minutes=$(( minutes+1 ))
+    done
+    hours=$(( hours+1 ))
+done
