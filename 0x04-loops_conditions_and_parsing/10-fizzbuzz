@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Loop through numbers from 0 to 99
 
-for ((i = 1; i <= 100; i++))
+for ((i = 0; i < 100; i++))
 do
 	if ((i % 3 == 0)) && ((i % 5 == 0))
 	then
