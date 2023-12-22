@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# process to practice process management
-tr=0
-while [ $tr ]
+# Init script to manage the manage_my_process script
+i=0
+while [ $i ]
 do
     echo 'I am alive' >> /tmp/my_process
     sleep 2
