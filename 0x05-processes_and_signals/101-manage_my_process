@@ -2,6 +2,7 @@
 # Init script to manage the manage_my_process script
 # Provides start, stop, and restart functionality
 
+
 if [ "${1}" == "start" ]
 then
 	    ./manage_my_process &
