@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Stop the 7-highlander
+
+k_pid=$(pgrep -f 7-highlander)
+kill -SIGKILL "$k_pid"
