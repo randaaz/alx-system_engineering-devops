@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Stop the 4-to_infinity_and_beyond process using pkill
+# Stop the 100-process_and_pid_file process using pkill
 
 pkill -f 100-process_and_pid_file
