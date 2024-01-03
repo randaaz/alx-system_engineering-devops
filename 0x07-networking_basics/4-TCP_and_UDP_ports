@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# The shebang line specifying the interpreter
+# netstat command to display listening sockets and associated programs
+
+netstat -l --program
