@@ -47,7 +47,6 @@ Write a Bash script (`0-change_your_home_IP`) that configures an Ubuntu server w
 - `localhost` resolves to `127.0.0.2`
 - `facebook.com` resolves to `8.8.8.8`
 
-# 0x08. Networking Basics 2
 
 ## Task 1: Show Attached IPs
 
