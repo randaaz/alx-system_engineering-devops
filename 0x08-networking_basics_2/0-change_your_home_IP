@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Copy the original hosts file to the home directory
+# Use sed to replace specific lines in hosts.new
+# Overwrite the original hosts file with the modified hosts.new
+
+cp /etc/hosts ~/h.n
+sed -i 's/127.*$/127.0.0.2 localhost\n8.8.8.8 facebook.com/' ~/h.n
+cp -f ~/h.n /etc/hosts
