@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script connects to a remote server using SSH with a specific private key.
+# The private key used for authentication is assumed to be located at '~/.ssh/school'.
+ssh ubuntu@8.8.8.8-i ~/.ssh/school
