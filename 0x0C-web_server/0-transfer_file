@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Script to transfer file from local system to remote system.
+# a Bash script that transfers a file from our client to a server:.
 if [ $# -ge 3 ]; then
     PATH_TO_FILE=$1
     IP=$2
