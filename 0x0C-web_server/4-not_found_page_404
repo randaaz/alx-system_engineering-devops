@@ -18,9 +18,7 @@ echo "Hello World!" > "$ROOT_FILE_PATH"
 echo "Ceci n'est pas une page" > "$ERROR_FILE_PATH"
 sudo chmod a-w "$ROOT_FILE_PATH" "$ERROR_FILE_PATH"
 
-# Inserting changes into the folder
 sudo sed -i "46 a\ $REDIRECTION" "$SERVER_BLOCK_PATH"
 sudo sed -i "50 a\ $CUSTOM_ERROR" "$SERVER_BLOCK_PATH"
 
-# Restart server
 sudo service nginx restart
