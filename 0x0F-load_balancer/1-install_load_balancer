@@ -41,7 +41,7 @@ frontend randaalxsedomain-tech-frontend
 backend randaalxsedomain-tech-backend
     balance roundrobin
     server 514129-web-01 54.157.162.121:80 check
-    server 151666-web-02 54.174.153.180:80 check
+    server 514129-web-02 54.174.153.180:80 check
 "
 
 # shellcheck disable=SC2154
