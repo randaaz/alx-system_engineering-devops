@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Script: Nginx Configuration Cleanup.
+# Description: This script removes the default Nginx configuration and creates a symbolic link to the available configuration, then restarts the Nginx service.
+
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
