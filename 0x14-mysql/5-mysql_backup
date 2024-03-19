@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Bash script that generates a MySQL dump and creates a compressed archive out of it.
 
+# variables
 day=$(date +"%d")
 month=$(date +"%m")
 year=$(date +"%Y")
