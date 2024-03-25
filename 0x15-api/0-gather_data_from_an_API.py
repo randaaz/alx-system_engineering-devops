@@ -9,7 +9,7 @@ if __name__ == "__main__":
     use = requests.get(url + "users/{}".format(sys.argv[1])).json()
     tod = requests.get(url + "todos", params={"userId": sys.argv[1]}).json()
 
-    comp = [t.get("title") for t in tod if t.get("completed") is True]
+    comp = [i.get("title") for i in tod if i.get("completed") is True]
     print("Employee {} is done with tasks({}/{}):".format(
         use.get("name"), len(comp), len(tod)))
     [print("\t {}".format(c)) for c in comp]
