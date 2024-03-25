@@ -12,4 +12,4 @@ if __name__ == "__main__":
     comp = [i.get("title") for i in tod if i.get("completed") is True]
     print("Employee {} is done with tasks({}/{}):".format(
         use.get("name"), len(comp), len(tod)))
-    [print("\t {}".format(c)) for c in comp]
+    [print("\t {}".format(j)) for j in comp]
